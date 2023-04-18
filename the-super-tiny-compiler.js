@@ -93,7 +93,7 @@
  *   4 - 2          (subtract 4 2)            subtract(4, 2)
  *   2 + (4 - 2)    (add 2 (subtract 4 2))    add(2, subtract(4, 2))
  *
- * Easy peezy right?
+ * Easy peezy(【口语】简单极了) right?
  *
  * Well good, because this is exactly what we are going to compile. While this
  * is neither a complete LISP or C syntax, it will be enough of the syntax to
@@ -101,7 +101,7 @@
  */
 
 /**
- * Most compilers break down into three primary stages: Parsing, Transformation,
+ * Most compilers break down into(分解为) three primary stages: Parsing, Transformation,
  * and Code Generation
  *
  * 1. *Parsing* is taking raw code and turning it into a more abstract
@@ -1027,7 +1027,7 @@ function codeGenerator(node) {
 
 function compiler(input) {
   let tokens = tokenizer(input);
-  let ast    = parser(tokens);
+  let ast = parser(tokens);
   let newAst = transformer(ast);
   let output = codeGenerator(newAst);
 
